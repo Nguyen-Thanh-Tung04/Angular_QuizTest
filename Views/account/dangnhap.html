@@ -1,0 +1,31 @@
+<div class="art p-5 ">
+    <div class="box d-flex justify-content-center align-items-center bg-white rounded w-50 m-auto border border-1">
+        <div class="login px-lg-5 px-3 py-lg-5 py-4">
+            <h5 class="fs-3 text-center">Đăng nhập</h5>
+            <form name="addForm">
+                <label class="mb-1">Tên đăng nhập</label> <br>
+                <input class="form-control" name="username" type="text" placeholder="Nhập tên đăng nhập"
+                    ng-model="username" required><br>
+                <p class="text-danger" ng-if="addForm.username.$dirty && addForm.username.$error.required">
+                    Tên không được bỏ trống
+                </p>
+
+                <label class="mb-1">Mật khẩu</label> <br>
+                <input class="form-control" name="password" type="password" placeholder="Nhập mật khẩu" ng-model="password"
+                    required>
+                <p class="text-danger" ng-if="addForm.password.$dirty && addForm.password.$error.required">
+                    Tên không được bỏ trống
+                </p>
+                <br>
+
+
+                <a href="#!forget">Quên mật khẩu ?</a>
+
+                <div class="mt-lg-3 mt-2">
+                    <a class="btn btn-warning" href="#!register">Đăng ký</a>
+                    <input class="btn btn-warning" name="login" ng-click="checkLogin()" value="Đăng nhập">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

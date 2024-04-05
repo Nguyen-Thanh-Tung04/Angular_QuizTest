@@ -1,0 +1,67 @@
+{
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Backend"
+    },
+    {
+      "id": "DM02",
+      "ten": "Frontend"
+    },
+    {
+      "id": "DM03",
+      "ten": "Fullstack"
+    }
+  ],
+  "san-pham": [
+    {
+      "ten": "PHP3",
+      "anh": "img/php.webp",
+      "title  ": "Trà sữa 1",
+      "id": "PHP3"
+    },
+    {
+      "ten": "Angular",
+      "anh": "img/agn.jpg",
+      "tenDanhMuc": "tung",
+      "id": "ANGULAR"
+    },
+    {
+      "ten": "Javascrip",
+      "anh": "img/js.jpg",
+      "tenDanhMuc": "Cafe",
+      "id": "JAVASCRIP"
+    },
+    {
+      "ten": "CSS",
+      "anh": "img/css.webp",
+      "title  ": "Trà sữa 1",
+      "id": "04"
+    },
+    {
+      "ten": "Laravel",
+      "anh": "img/lra.jpg",
+      "tenDanhMuc": "tung",
+      "id": "05"
+    },
+    {
+      "ten": "HTML",
+      "anh": "img/html.jpg",
+      "tenDanhMuc": "Cafe",
+      "id": "06"
+    }
+  ],
+  "acount": [
+    {
+      "username": "tung",
+      "password": "123",
+      "id": "d569"
+    },
+    {
+      "id": "0cf6",
+      "username": "duong",
+      "email": "duong@gmail.com",
+      "password": "432"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+<div class="art p-5">
+    <div class="container">
+        <h2 class="text text-black text-center rounded border border-2 w-50 bg-white m-auto">Thể loại bài kiểm
+            tra</h2>
+        <div id="content-1" class="row justify-content-center mt-lg-4">
+            <!-- <a href="#!start" class="text-decoration-none text-black"> -->
+            <div class="card p-3 m-4" style="width: 18rem;" ng-repeat="sanpham in dsSanPham">
+                <img src="{{sanpham.anh}}" style="height: 12rem;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{sanpham.ten}}</h5>
+                    <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                    <a href="#!detail/{{sanpham.id}}" class="btn btn-primary di"  ng-click="onStart(sanpham.id)">Chi tiết</a>
+                </div>
+            </div>
+            <!-- </a> -->
+           
+            <!-- Các card khác -->
+        </div>
+        <div id="content-2" class="row justify-content-center mt-lg-4 " style="display: none;">
+            <a href="#!start" class="text-decoration-none text-black">
+                <div class="card p-3 m-4" style="width: 18rem;">
+                    <img src="img/php.webp" style="height: 12rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                        <a href="#!start" class="btn btn-primary di">Chi tiết</a>
+                    </div>
+                </div>
+            </a>
+            <div class="card p-3 m-4" style="width: 18rem;">
+                <img src="img/agn.jpg" style="height: 12rem;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Angular</h5>
+                    <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                    <a href="#!start" class="btn btn-primary">Chi tiết</a>
+                </div>
+            </div>
+            <div class="card p-3 m-4" style="width: 18rem;">
+                <img src="img/js.jpg" style="height: 12rem;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Javascrip</h5>
+                    <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                    <a href="#!start" class="btn btn-primary">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+        <div id="content-3" class="row justify-content-center mt-lg-4" style="display: none;">
+            <a href="#!start" class="text-decoration-none text-black">
+                <div class="card p-3 m-4" style="width: 18rem;">
+                    <img src="img/php.webp" style="height: 12rem;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                        <a href="#!start" class="btn btn-primary di">Chi tiết</a>
+                    </div>
+                </div>
+            </a>
+            <div class="card p-3 m-4" style="width: 18rem;">
+                <img src="img/css.webp" style="height: 12rem;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Angular</h5>
+                    <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                    <a href="#!start" class="btn btn-primary">Chi tiết</a>
+                </div>
+            </div>
+            <div class="card p-3 m-4" style="width: 18rem;">
+                <img src="img/lra.jpg" style="height: 12rem;" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Javascrip</h5>
+                    <p class="card-text">Bài thi chắc nghiệm củng cố kiến thức vững vàng hơn. </p>
+                    <a href="#!start" class="btn btn-primary">Chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <nav aria-label="...">
+            <ul class="pagination pagination-lg">
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link" onclick="changeContent(1)">1</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" onclick="changeContent(2)">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" onclick="changeContent(3)">3</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    function changeContent(page) {
+        // Ẩn tất cả các nội dung khác
+        var contents = document.querySelectorAll('.container > div[id^="content-"]');
+        contents.forEach(function (content) {
+            content.style.display = 'none';
+            content.classList.remove('d-flex');
+            // Gỡ bỏ lớp 'd-flex' khỏi tất cả các phần nội dung
+        });
+
+        // Hiển thị nội dung tương ứng với trang đã chọn
+        var selectedContent = document.querySelector('#content-' + page);
+        selectedContent.style.display = 'block';
+        selectedContent.classList.add('d-flex');
+        // Thêm lớp 'd-flex' cho phần nội dung đã chọn
+    }
+</script>

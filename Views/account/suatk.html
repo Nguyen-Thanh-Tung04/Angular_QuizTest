@@ -1,0 +1,178 @@
+<div class="checkout-area pt-100px pb-100px">
+
+    <div class="container">
+        <div class="row">
+            <div class="ml-auto mr-auto col-lg-9 mt-5">
+                <div class="checkout-wrapper">
+                    <div id="faq" class="panel-group">
+                        <div class="panel panel-default single-my-account" data-aos="fade-up" data-aos-delay="200">
+                            <div class="panel-heading my-account-title">
+                                <h3 class="panel-title bg-dark p-2 text-white rounded art1"><span>1 .</span> <a
+                                        data-bs-toggle="collapse" class="collapsed text-decoration-none text-white"
+                                        aria-expanded="true" href="#my-account-1">Chỉnh sửa thông
+                                        tin tài khoản</a>
+                                </h3>
+                            </div>
+                            <div id="my-account-1" class="panel-collapse collapse show" data-bs-parent="#faq">
+                                <div class="panel-body">
+                                    <div class="myaccount-info-wrapper">
+                                        <div class="account-info-wrapper d-flex justify-content-between">
+                                            <div class="text">
+                                                <h4>THÔNG TIN TÀI KHOẢN CỦA TÔI </h4>
+                                                <h5>Thông tin cá nhân của bạn </h5>
+                                            </div>
+                                        </div>
+
+
+                                        <form method="post" enctype="multipart/form-data">
+                                            <div class="row">
+
+                                                <input type="hidden" name="id">
+
+                                                <input type="hidden" name="user-password" placeholder="Mật khẩu">
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label class="mb-1 ">Tên tài khoản</label>
+                                                        <input type="text" class="form-control" name="user-name"
+                                                            value="tung" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div>
+                                                        <label class="mb-1">Avata</label>
+                                                        <div class="d-flex">
+                                                            <input style="width:50%;" type="file" name="hinh" id="">
+
+                                                            <img src='img/bn1.jpg'
+                                                                style='height: 100px; width: 100px; border-radius: 50%;'>";
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="billing-info">
+                                                        <label class="mb-1">Địa chỉ</label>
+                                                        <input type="text" class="form-control" name="user-adress"
+                                                            placeholder="Địa chỉ" value="" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label class="mb-1">Số điện thoại</label>
+                                                        <input type="text" class="form-control" name="user-phone"
+                                                            placeholder="Số điện thoại" value="" />
+                                                    </div>
+                                                </div>
+                                                <input name="user-email" class="form-control"
+                                                    placeholder="Địa chỉ email" type="hidden" value="" />
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="gioitinh">
+                                                        <label class="mb-1" for="gioi_tinh">Giới tính</label>
+                                                        <select class="form-select" name="gender" id="gioi_tinh">
+                                                            <option value="1">Nam</option>
+                                                            <option value="2">Nữ</option>
+                                                            <option value="3">Khác</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-6 col-md-6">
+                                                    <div class="billing-info">
+                                                        <label class="mb-1">Ngày sinh</label>
+                                                        <input type="date" class="form-control" name="birth" id=""
+                                                            value="">
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="billing-back-btn">
+                                                <!-- <div class="billing-back">
+                                                    <a href="#"><i class="icon-arrow-up-circle"></i> back</a>
+                                                </div> -->
+                                                <div class="dangky col-lg-3 my-3">
+                                                    <input type="submit" value="Cập nhật" class="btn btn-primary"
+                                                        name="update_user">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default single-my-account" data-aos="fade-up" data-aos-delay="400">
+                            <div class="panel-heading my-account-title bg-dark p-2 rounded art1">
+                                <h3 class="panel-title text-white"><span>2 .</span> <a data-bs-toggle="collapse"
+                                        class="collapsed text-decoration-none text-white " aria-expanded="false"
+                                        href="#my-account-2">Thay đổi
+                                        mật
+                                        khẩu
+                                        của bạn
+                                    </a></h3>
+                            </div>
+                            <div id="my-account-2" class="panel-collapse collapse" data-bs-parent="#faq">
+                                <div class="panel-body">
+                                    <div class="myaccount-info-wrapper">
+                                        <h4 class="text-center mt-2">Đổi mật khẩu</h4>
+                                        <form method="post">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="billing-info">
+                                                        <div class="mb-3 fw-bold">
+                                                            <label for="exampleInputEmail1" class="form-label">Mật
+                                                                khẩu hiện tại</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="billing-info">
+                                                        <div class="mb-3 fw-bold">
+                                                            <label for="exampleInputEmail1" class="form-label">Mật
+                                                                khẩu mới</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="billing-info">
+                                                        <div class="mb-3 fw-bold">
+                                                            <label for="exampleInputEmail1" class="form-label">Xác
+                                                                thực mật
+                                                                khẩu</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="billing-back-btn">
+                                                <!-- <div class="billing-back">
+                                                    <a href="#"><i class="icon-arrow-up-circle"></i> back</a>
+                                                </div> -->
+                                                <div class="dangky col-lg-3 my-3">
+                                                    <input type="submit" class="btn btn-primary" value="Cập nhật"
+                                                        name="update_pass">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

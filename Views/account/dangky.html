@@ -1,0 +1,36 @@
+<div class="art p-5 ">
+    <div class="box d-flex justify-content-center align-items-center bg-white rounded w-50 m-auto border border-1">
+        <div class="login px-lg-5 px-3 py-lg-5 py-4 ">
+            <h5 class="fs-3 text-center">Đăng ký</h5>
+            <form name="addForm">
+                <label class="mb-1">Tên đăng nhập</label> <br>
+                <input class="form-control" name="username" type="text" required placeholder="Nhập tên đăng nhập"
+                    ng-model="inputValue.username">
+                <p class="text-danger" ng-if="addForm.username.$dirty && addForm.username.$error.required">
+                    Tên không được bỏ trống
+                </p>
+                <p class="text-danger" ng-if="addForm.username.$dirty && addForm.username.$error.minlength">
+                    Tên không được ít hơn 3 ký tự
+                </p><br>
+
+                <label class="mb-1">Email</label> <br>
+                <input class="form-control" name="email" type="text" required placeholder="Nhập email"
+                    ng-model="inputValue.email">
+                <p class="text-danger" ng-if="addForm.email.$dirty && addForm.email.$error.required">
+                    Tên không được bỏ trống
+                </p><br>
+
+                <label class="mb-1">Mật khẩu</label> <br>
+                <input class="form-control" name="password" type="password" required placeholder="Nhập mật khẩu"
+                    ng-model="inputValue.password">
+                <p class="text-danger" ng-if="addForm.password.$dirty && addForm.password.$error.required">
+                    Mật khẩu không được bỏ trống
+                </p> <br>
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <input class="btn btn-warning" type="submit" ng-click="register()" value="Đăng ký">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
