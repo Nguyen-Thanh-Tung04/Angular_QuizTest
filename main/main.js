@@ -7,6 +7,10 @@ spaApp.config(function ($routeProvider) {
             templateUrl: 'Views/home.html',
             controller: "dsSpCtrl"
         })
+        .when('/', {
+            templateUrl: 'Views/home.html',
+            controller: "dsSpCtrl"
+        })
         .when('/about', {
             templateUrl: 'Views/about.html',
         })
@@ -36,27 +40,12 @@ spaApp.config(function ($routeProvider) {
             templateUrl: "Views/thi.html",
             controller: testController,
         })
-        .when("/result", {
-            templateUrl: "app/Views/user/ketqua.html",
-        })
-        .when("/admin", {
-            templateUrl: "app/Views/admin/home.html",
-
-        })
-        .when("/create-product", {
-            templateUrl: "pages/product/create.html",
-            controller: "createSpCtrl"
-        })
-        .when("/detail-product/:id_product", {
-            templateUrl: "pages/product/detail.html",
-            controller: "detailSpCtrl"
-        })
-        .when("/edit-product/:id", {
-            templateUrl: "pages/product/edit.html",
-            controller: "editSpCtrl"
+        .when("/result/:id", {
+            templateUrl: "Views/ketqua.html",
+            controller: ResultController,
         })
         .otherwise({
-            redirectTo: '/list-product'
+            redirectTo: 'ERRORS 404 '
         })
 
 });

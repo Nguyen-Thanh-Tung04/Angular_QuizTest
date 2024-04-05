@@ -1,10 +1,9 @@
 <div class="container mt-5 ">
-    <h1>id :{{product.id}}</h1>
     <div class="row justify-content-center mt-lg-4 mt-2 m-5 border border-2 rounded">
         <div class="box-test col-lg-6 col-6 mb-lg-4 mb-2 px-0">
             <div class="box-test_item mx-3" style="background-color: #ffffff;">
                 <div class="item_img text-center px-lg-5 px-3 py-lg-4 py-2">
-                    <img width="100%" height="300px" src="img/php.webp" alt="">
+                    <img width="100%" height="300px" src="{{product.anh}}" alt="">
                 </div>
 
             </div>
@@ -12,13 +11,147 @@
         <div class="box-test col-lg-6 col-6 mb-lg-4 mb-2 px-0 mt-5">
             <p>quiz</p>
             <h2>Test {{product.ten}}</h2>
-            <p>Thời gian : 45 phút</p>
-            <p>Số lượng : 5 câu hỏi</p>
+            <p>Thời gian : 15 phút</p>
+            <p>Số lượng : 10 câu hỏi</p>
             <p>Bài test đánh giá chất lượng cao !</p>
             <a href="#!test/{{product.id}}" class="btn btn-primary" onclick="return confirm('BẠN ĐÃ SẴN SÀNG')">Bắt
                 đầu</a>
         </div>
     </div>
+    <div class="row justify-content-center mt-lg-4 mt-2 m-5 border border-2 rounded">
+        <div class="description-review-area pb-100px" data-aos="fade-up" data-aos-delay="200">
+            <div class="container">
+                <div class="description-review-wrapper">
+                    <div class="description-review-topbar nav">
+                        <a class="nav-item nav-link active" data-bs-toggle="tab" href="#des-details2">Description</a>
+                        <a class="nav-item nav-link" data-bs-toggle="tab" href="#des-details3">Reviews (2)</a>
+                    </div>
+                    <div class="tab-content description-review-bottom">
+                        <div id="des-details2" class="tab-pane fade show active">
+                            <div class="product-anotherinfo-wrapper">
+                                <p>PHP là một ngôn ngữ lập trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát
+                                    triển các ứng dụng viết
+                                    cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất thích hợp với web và
+                                    có
+                                    thể dễ dàng nhúng vào
+                                    trang HTML. Trong bài viết dưới đây Quản trị mạng muốn gửi đến bạn đọc bộ câu hỏi
+                                    trắc
+                                    nghiệm về chủ đề này
+                                    để bạn tham khảo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="des-details3" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="review-wrapper">
+                                        <div class="single-review">
+                                            <div class="review-img">
+                                                <img src="../img/bg3.jpg" alt="" />
+                                            </div>
+                                            <div class="review-content">
+                                                <div class="review-top-wrap">
+                                                    <div class="review-left">
+                                                        <div class="review-name">
+                                                            <h4>Tùng NGuyễn</h4>
+                                                        </div>
+                                                        <div class="rating-product">
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-left">
+                                                        <a href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="review-bottom">
+                                                    <p>Bài thi hay thật , rất thực tiễn !</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-review child-review">
+                                            <div class="review-img">
+                                                <img src="../img/avt.png" alt="" />
+                                            </div>
+                                            <div class="review-content">
+                                                <div class="review-top-wrap">
+                                                    <div class="review-left">
+                                                        <div class="review-name">
+                                                            <h4>Thanh TÙng</h4>
+                                                        </div>
+                                                        <div class="rating-product">
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                            <i class="ion-android-star"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-left">
+                                                        <a href="#">Reply</a>
+                                                    </div>
+                                                </div>
+                                                <div class="review-bottom">
+                                                    <p>Kiến thức thật bổ ích cảm ơn người tạo ra nó rất nhiều !</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="ratting-form-wrapper pl-50">
+                                        <h3>Add a Review</h3>
+                                        <div class="ratting-form">
+                                            <form action="#">
+                                                <div class="star-box">
+                                                    <span>Your rating:</span>
+                                                    <div class="rating-product">
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                        <i class="ion-android-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="rating-form-style">
+                                                            <input class="form-control" placeholder="Name"
+                                                                type="text" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 pb-2">
+                                                        <div class="rating-form-style">
+                                                            <input class="form-control" placeholder="Email"
+                                                                type="email" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 ">
+                                                        <div class="rating-form-style form-submit">
+                                                            <textarea class="form-control" name="Your Review"
+                                                                placeholder="Message"></textarea>
+
+                                                        </div>
+                                                        <button class="form-control btn btn-primary mt-2">Bình
+                                                            luận</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h2 class="text text-black text-center rounded border border-2 w-50 bg-white m-auto">Những bài kiểm tra khác
         </h2>

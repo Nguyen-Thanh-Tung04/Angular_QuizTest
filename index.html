@@ -6,24 +6,129 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Nhúng boostrap -->
-    <link rel="stylesheet" href="../lib/bootstrap.css">
-    <script src="lib/bootstrap.js"></script>
-    <!-- Nhúng icon -->
-    <script src="lib/font-fontawesome-ae333ffef2.js"></script>
-    <!-- Nhúng angular js -->
-    <script src="lib/angular.js"></script>
-    <!-- Nhúng thư viện angular-route. Lưu ý: khai báo angular-route sau angular.js -->
-    <script src="lib/angular-route.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
     <style>
-        .card:hover {
+        /* .card:hover {
             transform: scale(1.09);
             transition: all ease-in-out .3s;
+        } */
+
+        /* Các phần tử chính */
+        .description-review-area {
+            padding-bottom: 100px;
+        }
+
+        .description-review-wrapper {
+            padding: 20px;
+        }
+
+        .description-review-topbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .description-review-topbar .nav-link {
+            padding: 10px 20px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-bottom: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .description-review-topbar .nav-link.active {
+            background-color: #fff;
+            border-color: #ddd;
+            border-bottom: 1px solid #fff;
+        }
+
+        .product-anotherinfo-wrapper p {
+            margin-bottom: 0;
+        }
+
+        .review-wrapper {
+            margin-top: 20px;
+        }
+
+        .single-review {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .review-img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .review-content {
+            padding-left: 20px;
+        }
+
+        .review-name h4 {
+            margin-bottom: 5px;
+        }
+
+        .rating-product i {
+            color: gold;
+        }
+
+        .review-bottom p {
+            margin-bottom: 0;
+        }
+
+        .ratting-form-wrapper {
+            padding-left: 50px;
+        }
+
+        .ratting-form-wrapper h3 {
+            margin-bottom: 20px;
+        }
+
+        .ratting-form-style input,
+        .ratting-form-style textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .form-submit button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 767px) {
+            .description-review-wrapper {
+                padding: 10px;
+            }
+
+            .review-content {
+                padding-left: 10px;
+            }
+
+            .ratting-form-wrapper {
+                padding-left: 0;
+            }
+
+            .ratting-form-style input,
+            .ratting-form-style textarea {
+                width: 100%;
+                padding: 10px;
+            }
         }
     </style>
 

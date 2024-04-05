@@ -17,7 +17,7 @@
     {
       "ten": "PHP3",
       "anh": "img/php.webp",
-      "title  ": "Trà sữa 1",
+      "title  ": "PHP là một ngôn ngữ lập trình kịch bản hay một loại mã lệnh chủ yếu được dùng để phát triển các ứng dụng viết cho máy chủ, mã nguồn mở, dùng cho mục đích tổng quát. Nó rất thích hợp với web và có thể dễ dàng nhúng vào trang HTML.",
       "id": "PHP3"
     },
     {
@@ -62,6 +62,1437 @@
       "username": "duong",
       "email": "duong@gmail.com",
       "password": "432"
+    },
+    {
+      "id": "47dd",
+      "username": "toan",
+      "email": "toan@gmail.com",
+      "password": "321"
+    }
+  ],
+  "questions": [
+    {
+      "id": "PHP3",
+      "questions": [
+        {
+          "id": 25106,
+          "Text": "Có mấy loại Service?",
+          "Marks": 1,
+          "AnswerId": 104121,
+          "Answers": [
+            {
+              "id": 104118,
+              "Text": "3"
+            },
+            {
+              "id": 104119,
+              "Text": "4"
+            },
+            {
+              "id": 104120,
+              "Text": "1"
+            },
+            {
+              "id": 104121,
+              "Text": "2"
+            }
+          ]
+        },
+        {
+          "id": 25107,
+          "Text": "PHP tượng trưng cho cái gì?",
+          "Marks": 1,
+          "AnswerId": 104124,
+          "Answers": [
+            {
+              "id": 104122,
+              "Text": "Preprocessed Hypertext Page"
+            },
+            {
+              "id": 104123,
+              "Text": "Hypertext Transfer Protocol"
+            },
+            {
+              "id": 104125,
+              "Text": "Hypertext Preprocessor"
+            },
+            {
+              "id": 104124,
+              "Text": "Hypertext Markup Language"
+            }
+          ]
+        },
+        {
+          "id": 25108,
+          "Text": "Khi nào phương thức ServiceConnection.onServiceConnected được gọi?",
+          "Marks": 1,
+          "AnswerId": 104126,
+          "Answers": [
+            {
+              "id": 104126,
+              "Text": "Sau khi một thành phần gọi Context.startService()"
+            },
+            {
+              "id": 104127,
+              "Text": "Sau khi một thành phần gọi Context.bindService()"
+            },
+            {
+              "id": 104128,
+              "Text": "Sau khi BroadcastReceiver nhận một Intent được gửi bởi Service"
+            },
+            {
+              "id": 104129,
+              "Text": "Khi một Service gọi Context.startActivity()"
+            }
+          ]
+        },
+        {
+          "id": 25109,
+          "Text": "Phương thức Service.stopSelf(int startId) có tham số kiểu int. Tham số này dùng để làm gì?",
+          "Marks": 1,
+          "AnswerId": 104132,
+          "Answers": [
+            {
+              "id": 104130,
+              "Text": "Nếu startId khác 0, Service sẽ bị hủy một cách vô điều kiện"
+            },
+            {
+              "id": 104131,
+              "Text": "Tham số miêu tả số miliseconds bị trì hoãn trước khi Service bị hủy"
+            },
+            {
+              "id": 104132,
+              "Text": "Là start identifier gần nhất nhận được bởi lời gọi onStart(Intent, int)"
+            },
+            {
+              "id": 104133,
+              "Text": "Được sử dụng để dừng Service nếu Service đang chạy trong process id với process id bằng giá trị startid"
+            }
+          ]
+        },
+        {
+          "id": 25110,
+          "Text": "Câu nào là đúng khi đề cập đến Service?",
+          "Marks": 1,
+          "AnswerId": 104137,
+          "Answers": [
+            {
+              "id": 104134,
+              "Text": "Các ứng dụng khác nhau không thể truy cập đến các Service của chính nó"
+            },
+            {
+              "id": 104135,
+              "Text": "Tất cả phương án đều đúng"
+            },
+            {
+              "id": 104136,
+              "Text": "Lớp Service luôn luôn được truy cập bởi tất cả ứng dụng Android khác cài trên thiết bị"
+            },
+            {
+              "id": 104137,
+              "Text": "Service có thể chạy nền vô hạn kể cả khi thành phần khởi tạo Service đã bị hủy"
+            }
+          ]
+        },
+        {
+          "id": 25111,
+          "Text": "Trong IntentService, onBind mặc định trả lại giá trị nào?",
+          "Marks": 1,
+          "AnswerId": 104139,
+          "Answers": [
+            {
+              "id": 104138,
+              "Text": "-1"
+            },
+            {
+              "id": 104139,
+              "Text": "null"
+            },
+            {
+              "id": 104140,
+              "Text": "0"
+            },
+            {
+              "id": 104141,
+              "Text": "\"\""
+            }
+          ]
+        },
+        {
+          "id": 25112,
+          "Text": "Phương thức stopSelf dùng để làm gì?",
+          "Marks": 1,
+          "AnswerId": 104145,
+          "Answers": [
+            {
+              "id": 104142,
+              "Text": "Dừng thông báo notification tới người dùng"
+            },
+            {
+              "id": 104143,
+              "Text": "Dừng chương trình"
+            },
+            {
+              "id": 104144,
+              "Text": "Dừng kết nối Service với Sqlite"
+            },
+            {
+              "id": 104145,
+              "Text": "Dừng Service"
+            }
+          ]
+        },
+        {
+          "id": 25113,
+          "Text": "Phương thức onStartCommand được gọi khi nào?",
+          "Marks": 1,
+          "AnswerId": 104149,
+          "Answers": [
+            {
+              "id": 104146,
+              "Text": "Khi phương thức bindService được gọi"
+            },
+            {
+              "id": 104147,
+              "Text": "Khi phương thức stopSelf được gọi"
+            },
+            {
+              "id": 104148,
+              "Text": "Khi phương thức onBind được gọi"
+            },
+            {
+              "id": 104149,
+              "Text": "Khi phương thức startService được gọi"
+            }
+          ]
+        },
+        {
+          "id": 25114,
+          "Text": "Bạn nên giải phóng tài nguyên mà Service sử dụng trong phương thức nào?",
+          "Marks": 1,
+          "AnswerId": 104152,
+          "Answers": [
+            {
+              "id": 104150,
+              "Text": "onPause"
+            },
+            {
+              "id": 104151,
+              "Text": "pauseService"
+            },
+            {
+              "id": 104152,
+              "Text": "onDestroy"
+            },
+            {
+              "id": 104153,
+              "Text": "startService"
+            }
+          ]
+        },
+        {
+          "id": 25115,
+          "Text": "Để hủy Service dùng phương thức nào?",
+          "Marks": 1,
+          "AnswerId": 104155,
+          "Answers": [
+            {
+              "id": 104154,
+              "Text": "PauseService"
+            },
+            {
+              "id": 104155,
+              "Text": "StopService"
+            },
+            {
+              "id": 104156,
+              "Text": "PauseServices"
+            },
+            {
+              "id": 104157,
+              "Text": "StopServices"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ANGULAR",
+      "questions": [
+        {
+          "id": 25026,
+          "Text": "Điều khiển được sử dụng để hiển thị nội dụng trang web trong ứng dụng Android?",
+          "Marks": 1,
+          "AnswerId": 103784,
+          "Answers": [
+            {
+              "id": 103783,
+              "Text": "Button"
+            },
+            {
+              "id": 103784,
+              "Text": "WebView"
+            },
+            {
+              "id": 103785,
+              "Text": "Spinner"
+            },
+            {
+              "id": 103786,
+              "Text": "EditText"
+            }
+          ]
+        },
+        {
+          "id": 25027,
+          "Text": "Đối với URLConnection, sử dụng phương thức nào để thiết lập timeout cho connection?",
+          "Marks": 1,
+          "AnswerId": 103790,
+          "Answers": [
+            {
+              "id": 103787,
+              "Text": "setURLTimeout()"
+            },
+            {
+              "id": 103788,
+              "Text": "setInternetTimeout()"
+            },
+            {
+              "id": 103789,
+              "Text": "setTimeout()"
+            },
+            {
+              "id": 103790,
+              "Text": "setConnectTimeout()"
+            }
+          ]
+        },
+        {
+          "id": 25028,
+          "Text": "Cho đoạn mã lệnh sau:wv.setWebChromeClient(new WebChromeClient() { @Override public void onReceivedTitle(WebView view, String title) { getWindow().setTitle(title); } });Hãy cho biết đoạn lệnh trên dùng để làm gì?",
+          "Marks": 1,
+          "AnswerId": 103791,
+          "Answers": [
+            {
+              "id": 103791,
+              "Text": "Thay đổi title của trang web"
+            },
+            {
+              "id": 103792,
+              "Text": "Đóng trang web"
+            },
+            {
+              "id": 103793,
+              "Text": "Thay đổi nội dung của trang web"
+            },
+            {
+              "id": 103794,
+              "Text": "Lấy thông tin title của trang web"
+            }
+          ]
+        },
+        {
+          "id": 25029,
+          "Text": "Sử dụng lớp nào để truy cập và thay đổi thông tin trên trình duyệt mặc định của hệ điều hành Android?",
+          "Marks": 1,
+          "AnswerId": 103798,
+          "Answers": [
+            {
+              "id": 103795,
+              "Text": "WebClient"
+            },
+            {
+              "id": 103796,
+              "Text": "WebSafariClient"
+            },
+            {
+              "id": 103797,
+              "Text": "WebFirefoxClient"
+            },
+            {
+              "id": 103798,
+              "Text": "WebViewClient"
+            }
+          ]
+        },
+        {
+          "id": 25030,
+          "Text": "Câu nào là sai đối với WebView?",
+          "Marks": 1,
+          "AnswerId": 103800,
+          "Answers": [
+            {
+              "id": 103799,
+              "Text": "Không có widget cho brownser activity"
+            },
+            {
+              "id": 103800,
+              "Text": "Không thể sử dụng tag trong XML layout"
+            },
+            {
+              "id": 103801,
+              "Text": "Click vào link sẽ gọi trình duyệt"
+            },
+            {
+              "id": 103802,
+              "Text": "Có thể sử dụng tag trong XML layout"
+            }
+          ]
+        },
+        {
+          "id": 25031,
+          "Text": "Phương thức nào của WebSettings để cho phép WebView hỗ trợ JavaScript?",
+          "Marks": 1,
+          "AnswerId": 103806,
+          "Answers": [
+            {
+              "id": 103803,
+              "Text": "setJavaScriptEnabled(false)"
+            },
+            {
+              "id": 103804,
+              "Text": "setJavaScript(true)"
+            },
+            {
+              "id": 103805,
+              "Text": "setJavaScriptEnable(true)"
+            },
+            {
+              "id": 103806,
+              "Text": "setJavaScriptEnabled(true)"
+            }
+          ]
+        },
+        {
+          "id": 25032,
+          "Text": "Khi thời gian kết nối đến một URL quá timeout, phương thức getInputStream() sẽ đưa ra ngoại lệ nào?",
+          "Marks": 1,
+          "AnswerId": 103809,
+          "Answers": [
+            {
+              "id": 103807,
+              "Text": "java.net.TimeoutException"
+            },
+            {
+              "id": 103808,
+              "Text": "java.net.SocketException"
+            },
+            {
+              "id": 103809,
+              "Text": "java.net.SocketTimeoutException"
+            },
+            {
+              "id": 103810,
+              "Text": "java.net.SocketTimeout"
+            }
+          ]
+        },
+        {
+          "id": 25033,
+          "Text": "Chương trình sử dụng WebView phải có quyền gì?",
+          "Marks": 1,
+          "AnswerId": 103811,
+          "Answers": [
+            {
+              "id": 103811,
+              "Text": "android.permission.AUTHENTICATE_ACCOUNTS"
+            },
+            {
+              "id": 103812,
+              "Text": "android.permission.BIND_APPWIDGET"
+            },
+            {
+              "id": 103813,
+              "Text": "android.permission.INTERNET"
+            },
+            {
+              "id": 103814,
+              "Text": "android.permission.BIND_INPUT_METHOD"
+            }
+          ]
+        },
+        {
+          "id": 25034,
+          "Text": "Sử dụng phương thức nào để lấy thông tin tiêu đề trên trang web chạy trên trình duyệt?",
+          "Marks": 1,
+          "AnswerId": 103817,
+          "Answers": [
+            {
+              "id": 103815,
+              "Text": "onReceiveTitle"
+            },
+            {
+              "id": 103816,
+              "Text": "onReceivedHeader"
+            },
+            {
+              "id": 103817,
+              "Text": "onReceivedTitle"
+            },
+            {
+              "id": 103818,
+              "Text": "onReceiveHeader"
+            }
+          ]
+        },
+        {
+          "id": 25035,
+          "Text": "Để tải thông tin qua HTTP, chúng ta phải làm gì?",
+          "Marks": 1,
+          "AnswerId": 103821,
+          "Answers": [
+            {
+              "id": 103819,
+              "Text": "Sử dụng HttpGet"
+            },
+            {
+              "id": 103820,
+              "Text": "Không thể tải thông tin qua HTTP"
+            },
+            {
+              "id": 103821,
+              "Text": "Sử dụng thư viện chuẩn của Java"
+            },
+            {
+              "id": 103822,
+              "Text": "Sử dụng URLRequesting"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "JAVASCRIP",
+      "questions": [
+        {
+          "id": 25262,
+          "Text": "Kiểm thử nào không nằm trong kiểm thử hệ thống?",
+          "Marks": 1,
+          "AnswerId": 104715,
+          "Answers": [
+            {
+              "id": 104712,
+              "Text": "Installation tests"
+            },
+            {
+              "id": 104713,
+              "Text": "Performance tests"
+            },
+            {
+              "id": 104714,
+              "Text": "GUI tests"
+            },
+            {
+              "id": 104715,
+              "Text": "Unit test"
+            }
+          ]
+        },
+        {
+          "id": 25263,
+          "Text": "Kiểm thử nào được sử dụng để kiểm thử hoạt động của các thành phần khi chúng làm việc chung với nhau?",
+          "Marks": 1,
+          "AnswerId": 104717,
+          "Answers": [
+            {
+              "id": 104716,
+              "Text": "Kiểm thử đơn vị"
+            },
+            {
+              "id": 104717,
+              "Text": "Kiểm thử tích hợp"
+            },
+            {
+              "id": 104718,
+              "Text": "Kiểm thử chấp nhận"
+            },
+            {
+              "id": 104719,
+              "Text": "Kiểm thử giao diện"
+            }
+          ]
+        },
+        {
+          "id": 25264,
+          "Text": "Android sử dụng Framework nào để kiểm thử đơn vị?",
+          "Marks": 1,
+          "AnswerId": 104720,
+          "Answers": [
+            {
+              "id": 104720,
+              "Text": "JUnit"
+            },
+            {
+              "id": 104721,
+              "Text": "FUnit"
+            },
+            {
+              "id": 104722,
+              "Text": "NUnit"
+            },
+            {
+              "id": 104723,
+              "Text": "AUnit"
+            }
+          ]
+        },
+        {
+          "id": 25265,
+          "Text": "Trong JUnit, phương thức nào được sử dụng để kiểm tra một giá trị có phải Null hay không?",
+          "Marks": 1,
+          "AnswerId": 104727,
+          "Answers": [
+            {
+              "id": 104724,
+              "Text": "confirmNull"
+            },
+            {
+              "id": 104725,
+              "Text": "assertNulls"
+            },
+            {
+              "id": 104726,
+              "Text": "confirmNulls"
+            },
+            {
+              "id": 104727,
+              "Text": "assertNull"
+            }
+          ]
+        },
+        {
+          "id": 25266,
+          "Text": "Trong JUnit test case, phương thức nào được sử dụng để tạo đối tượng và khởi tạo giá trị cho các đối tượng?",
+          "Marks": 1,
+          "AnswerId": 104729,
+          "Answers": [
+            {
+              "id": 104728,
+              "Text": "tearingDown()"
+            },
+            {
+              "id": 104729,
+              "Text": "setUp()"
+            },
+            {
+              "id": 104730,
+              "Text": "settingUp()"
+            },
+            {
+              "id": 104731,
+              "Text": "tearDown()"
+            }
+          ]
+        },
+        {
+          "id": 25267,
+          "Text": "Kiểm tra việc lưu thông tin trạng thái của Activity trong phương thức nào?",
+          "Marks": 1,
+          "AnswerId": 104733,
+          "Answers": [
+            {
+              "id": 104732,
+              "Text": "onSearchRequested"
+            },
+            {
+              "id": 104733,
+              "Text": "onPause"
+            },
+            {
+              "id": 104734,
+              "Text": "onKeyUp"
+            },
+            {
+              "id": 104735,
+              "Text": "onNavigateUp"
+            }
+          ]
+        },
+        {
+          "id": 25268,
+          "Text": "Lớp nào không nằm trong gói android.test.mock?",
+          "Marks": 1,
+          "AnswerId": 104740,
+          "Answers": [
+            {
+              "id": 104736,
+              "Text": "MockContext"
+            },
+            {
+              "id": 104737,
+              "Text": "MockContentResolver"
+            },
+            {
+              "id": 104738,
+              "Text": "MockCursor"
+            },
+            {
+              "id": 104739,
+              "Text": "MockContentProvider"
+            },
+            {
+              "id": 104740,
+              "Text": "MockResource"
+            }
+          ]
+        },
+        {
+          "id": 25269,
+          "Text": "Trong JUnit, phương thức nào được sử dụng để so sánh hai giá trị có bằng nhau hay không?",
+          "Marks": 1,
+          "AnswerId": 104742,
+          "Answers": [
+            {
+              "id": 104741,
+              "Text": "assertEqual"
+            },
+            {
+              "id": 104742,
+              "Text": "assertEquals"
+            },
+            {
+              "id": 104743,
+              "Text": "confirmEqual"
+            },
+            {
+              "id": 104744,
+              "Text": "confirmEquals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ADUI",
+      "questions": [
+        {
+          "id": 25183,
+          "Text": "System Bar bao gồm các thành phần nào?",
+          "Marks": 1,
+          "AnswerId": 104411,
+          "Answers": [
+            {
+              "id": 104408,
+              "Text": "Navigation Bar"
+            },
+            {
+              "id": 104409,
+              "Text": "Status Bar"
+            },
+            {
+              "id": 104410,
+              "Text": "Notification Bar"
+            },
+            {
+              "id": 104411,
+              "Text": "Status Bar và Navigation Bar"
+            }
+          ]
+        },
+        {
+          "id": 25184,
+          "Text": "Câu nào sau đây đúng khi nói về Frame layout?",
+          "Marks": 1,
+          "AnswerId": 104412,
+          "Answers": [
+            {
+              "id": 104412,
+              "Text": "Frame layout là loại layout luôn lấy tọa độ gốc là top- left và nó xếp chồng view sau lên view trước"
+            },
+            {
+              "id": 104413,
+              "Text": "Frame layout sắp xếp các view ở chính xác tọa độ mong muốn thông qua các thuộc tính layout_x và layout_y"
+            },
+            {
+              "id": 104414,
+              "Text": "Frame layout sắp xếp các view theo hàng ngang hoặc hàng dọc, trong một cột hoặc một dòng"
+            },
+            {
+              "id": 104415,
+              "Text": "Frame layout sắp xếp các view thành các cột và dòng. Mỗi view trong 1 tableRow sẽ là 1 cột"
+            }
+          ]
+        },
+        {
+          "id": 25185,
+          "Text": "Trong android, interface được tạo từ các điều khiển gì?",
+          "Marks": 1,
+          "AnswerId": 104416,
+          "Answers": [
+            {
+              "id": 104416,
+              "Text": "View và View group"
+            },
+            {
+              "id": 104417,
+              "Text": "View"
+            },
+            {
+              "id": 104418,
+              "Text": "Button"
+            },
+            {
+              "id": 104419,
+              "Text": "View group"
+            }
+          ]
+        },
+        {
+          "id": 25186,
+          "Text": "Điều khiển nào sau đây không phải là một layout?",
+          "Marks": 1,
+          "AnswerId": 104420,
+          "Answers": [
+            {
+              "id": 104420,
+              "Text": "LeftAlignLayout"
+            },
+            {
+              "id": 104421,
+              "Text": "RelativeLayout"
+            },
+            {
+              "id": 104422,
+              "Text": "AbsoluteLayout"
+            },
+            {
+              "id": 104423,
+              "Text": "RelativeLayout"
+            }
+          ]
+        },
+        {
+          "id": 25187,
+          "Text": "Các điều khiển nào sau đây hiển thị trên Navigation Bar?",
+          "Marks": 1,
+          "AnswerId": 104425,
+          "Answers": [
+            {
+              "id": 104424,
+              "Text": "Recent"
+            },
+            {
+              "id": 104425,
+              "Text": "Tất cả các phương án đều đúng"
+            },
+            {
+              "id": 104426,
+              "Text": "Home"
+            },
+            {
+              "id": 104427,
+              "Text": "Back"
+            }
+          ]
+        },
+        {
+          "id": 25188,
+          "Text": "Loại layout nào sau đây luôn dùng để gắn các control ở góc bên trái trên cùng màn hình và không cho phép thay đổi vị trí của các control?",
+          "Marks": 1,
+          "AnswerId": 104428,
+          "Answers": [
+            {
+              "id": 104428,
+              "Text": "Frame layout"
+            },
+            {
+              "id": 104429,
+              "Text": "Table layout"
+            },
+            {
+              "id": 104430,
+              "Text": "Relative layout"
+            },
+            {
+              "id": 104431,
+              "Text": "Linear layout"
+            }
+          ]
+        },
+        {
+          "id": 25189,
+          "Text": "Khi viết code, ta có thể thiết lập hướng các control trên Linear layout bằng hàm nào?",
+          "Marks": 1,
+          "AnswerId": 104435,
+          "Answers": [
+            {
+              "id": 104432,
+              "Text": "setVertical()"
+            },
+            {
+              "id": 104433,
+              "Text": "setHorizontal()"
+            },
+            {
+              "id": 104434,
+              "Text": "setDirection()"
+            },
+            {
+              "id": 104435,
+              "Text": "setOrientation()"
+            }
+          ]
+        },
+        {
+          "id": 25190,
+          "Text": "Màn hình Home Screen là màn hình như thế nào?",
+          "Marks": 1,
+          "AnswerId": 104437,
+          "Answers": [
+            {
+              "id": 104436,
+              "Text": "Màn hình cung cấp cho người dùng truy cập đến các ứng dụng Mail được cài trên thiết bị"
+            },
+            {
+              "id": 104437,
+              "Text": "Chứa các folder, widgets hoặc các app shortcuts tùy theo ý người dùng"
+            },
+            {
+              "id": 104438,
+              "Text": "Màn hình cung cấp cho người dùng truy cập đến các ứng dụng đang chạy gần đây một cách nhanh nhất"
+            },
+            {
+              "id": 104439,
+              "Text": "Hiển thị toàn bộ ứng dụng được cài trên máy từ Amazon Store, và có thể đưa một ứng dụng bất kỳ ra màn hình Home"
+            }
+          ]
+        },
+        {
+          "id": 25191,
+          "Text": "Câu nào đúng khi nói về AutoCompleteTextView?",
+          "Marks": 1,
+          "AnswerId": 104443,
+          "Answers": [
+            {
+              "id": 104440,
+              "Text": "Vừa là layout vừa là widget"
+            },
+            {
+              "id": 104441,
+              "Text": "Thực chất là một Menu"
+            },
+            {
+              "id": 104442,
+              "Text": "Là một layout"
+            },
+            {
+              "id": 104443,
+              "Text": "Là một widget"
+            }
+          ]
+        },
+        {
+          "id": 25192,
+          "Text": "Đơn vị đo lường không dùng trong Android là?",
+          "Marks": 1,
+          "AnswerId": 104446,
+          "Answers": [
+            {
+              "id": 104444,
+              "Text": "Db/dip (Density- independent pixel)"
+            },
+            {
+              "id": 104445,
+              "Text": "Px (Pixel)"
+            },
+            {
+              "id": 104446,
+              "Text": "Ptx"
+            },
+            {
+              "id": 104447,
+              "Text": "Pt (Point)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ASNE",
+      "questions": [
+        {
+          "id": 25970,
+          "Text": "Lập trình viên thường gán giá trị mặc định cho các điều khiển trong phương thức xử lý sự kiện ........... của trang",
+          "Marks": 1,
+          "AnswerId": 107573,
+          "Answers": [
+            {
+              "id": 107571,
+              "Text": "Prerender"
+            },
+            {
+              "id": 107572,
+              "Text": "Init"
+            },
+            {
+              "id": 107573,
+              "Text": "Load"
+            },
+            {
+              "id": 107574,
+              "Text": "Unload"
+            }
+          ]
+        },
+        {
+          "id": 25971,
+          "Text": "Bạn hãy cho biết định nghĩa nào sau đây là nói về ứng dụng web?",
+          "Marks": 1,
+          "AnswerId": 107575,
+          "Answers": [
+            {
+              "id": 107575,
+              "Text": "Là một ứng dụng client/server được truy cập thông qua trình duyệt Web trên mạng Internet hoặc intranet"
+            },
+            {
+              "id": 107576,
+              "Text": "Các phương án đều đúng"
+            },
+            {
+              "id": 107577,
+              "Text": "Là ứng dụng chỉ chạy trên một máy tính đơn"
+            },
+            {
+              "id": 107578,
+              "Text": "Là ứng dụng chỉ chạy trên môi trường mobile"
+            }
+          ]
+        },
+        {
+          "id": 25972,
+          "Text": "Để hiển thị dòng \"Hello World\" trên trang web, trong ASP.Net cần dùng lệnh nào?",
+          "Marks": 1,
+          "AnswerId": 107582,
+          "Answers": [
+            {
+              "id": 107579,
+              "Text": "Document.Write(\"Hello World\");"
+            },
+            {
+              "id": 107580,
+              "Text": "\"Hello World\""
+            },
+            {
+              "id": 107581,
+              "Text": "Request.Write((\"Hello World\");"
+            },
+            {
+              "id": 107582,
+              "Text": "Response.Write(\"Hello World\");"
+            }
+          ]
+        },
+        {
+          "id": 25973,
+          "Text": "Phát biểu nào sau đây đúng về ASP.NET?",
+          "Marks": 1,
+          "AnswerId": 107584,
+          "Answers": [
+            {
+              "id": 107583,
+              "Text": "ASP.NET là mô hình lập trình hướng cấu trúc"
+            },
+            {
+              "id": 107584,
+              "Text": "ASP.NET là mô hình lập trình hướng sự kiện"
+            },
+            {
+              "id": 107585,
+              "Text": "ASP.NET là mô hình lập trình hướng thành phần"
+            },
+            {
+              "id": 107586,
+              "Text": "ASP.NET là mô hình lập trình hướng đối tượng"
+            }
+          ]
+        },
+        {
+          "id": 25974,
+          "Text": "Khi chạy một ứng dụng ASP.NET, nếu ngoại lệ xảy ra nhưng không được bắt và xử lý, ứng dụng sẽ chuyển sang chế độ ngắt và hộp thoại ............ sẽ hiển thị.",
+          "Marks": 1,
+          "AnswerId": 107587,
+          "Answers": [
+            {
+              "id": 107587,
+              "Text": "Exception Assistant"
+            },
+            {
+              "id": 107588,
+              "Text": "Exception Help"
+            },
+            {
+              "id": 107589,
+              "Text": "Các phương án đều sai"
+            },
+            {
+              "id": 107590,
+              "Text": "Exception"
+            }
+          ]
+        },
+        {
+          "id": 25975,
+          "Text": "Theo bạn, câu nào sau đây là sai khi nói về web động?",
+          "Marks": 1,
+          "AnswerId": 107591,
+          "Answers": [
+            {
+              "id": 107591,
+              "Text": "Viết hoàn toàn bằng ngôn ngữ HTML"
+            },
+            {
+              "id": 107592,
+              "Text": "Có tương tác với người dùng, nội dung của trang hiển thị khác nhau đáp ứng các sự kiện."
+            },
+            {
+              "id": 107593,
+              "Text": "Có thể dùng để hiển thị và cung cấp thông tin"
+            },
+            {
+              "id": 107594,
+              "Text": "Lưu dữ liệu trong cơ sở dữ liệu"
+            }
+          ]
+        },
+        {
+          "id": 25976,
+          "Text": "Vòng đời của một trang Web bao gồm các các sự kiện:1. PreRender2. Load3. UnLoad4. InitTheo bạn, các sự kiện xảy ra theo thứ tự nào sau đây là đúng?",
+          "Marks": 1,
+          "AnswerId": 107595,
+          "Answers": [
+            {
+              "id": 107595,
+              "Text": "4 - 2 – 3 – 1"
+            },
+            {
+              "id": 107596,
+              "Text": "4 - 3 – 2 – 1"
+            },
+            {
+              "id": 107597,
+              "Text": "2 - 3 – 4 – 1"
+            },
+            {
+              "id": 107598,
+              "Text": "1 - 2 - 3 – 4"
+            }
+          ]
+        },
+        {
+          "id": 25977,
+          "Text": "Phím tắt nào sau đây dùng để bắt đầu chạy ứng dụng dưới chế độ gỡ lỗi?",
+          "Marks": 1,
+          "AnswerId": 107599,
+          "Answers": [
+            {
+              "id": 107599,
+              "Text": "F9"
+            },
+            {
+              "id": 107600,
+              "Text": "F10"
+            },
+            {
+              "id": 107601,
+              "Text": "F5"
+            },
+            {
+              "id": 107602,
+              "Text": "F11"
+            }
+          ]
+        },
+        {
+          "id": 25978,
+          "Text": "Lớp nào sau đây được ASP.NET cung cấp để duy trì các thông tin trao đổi giữa Client và Server?",
+          "Marks": 1,
+          "AnswerId": 107603,
+          "Answers": [
+            {
+              "id": 107603,
+              "Text": "HttpResponse"
+            },
+            {
+              "id": 107604,
+              "Text": "Các phươn án đều đúng"
+            },
+            {
+              "id": 107605,
+              "Text": "HttpServerUtility"
+            },
+            {
+              "id": 107606,
+              "Text": "HttpRequest"
+            }
+          ]
+        },
+        {
+          "id": 25979,
+          "Text": "Theo bạn, sự kiện nào sau đây được xem là sự kiện tự động kích hoạt?",
+          "Marks": 1,
+          "AnswerId": 107607,
+          "Answers": [
+            {
+              "id": 107607,
+              "Text": "Tải trang (Page_load)"
+            },
+            {
+              "id": 107608,
+              "Text": "Thay đổi giá trị ở TextBox (changeText)"
+            },
+            {
+              "id": 107609,
+              "Text": "Nhấn chuột vào một nút (button_click)"
+            },
+            {
+              "id": 107610,
+              "Text": "Đóng cửa sổ trình duyệt (close window)"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "1712287480299",
+      "userId": "1",
+      "score": 3,
+      "quizId": "ADAV",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T03:24:40.299Z"
+    },
+    {
+      "id": "1712287511726",
+      "userId": "1",
+      "score": 3,
+      "quizId": "ADAV",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T03:25:11.726Z"
+    },
+    {
+      "id": "1712287545005",
+      "userId": "1",
+      "score": 3,
+      "quizId": "ADAV",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T03:25:45.005Z"
+    },
+    {
+      "id": "1712288056654",
+      "userId": "1",
+      "score": 6,
+      "quizId": "ADAV",
+      "percentageCorrect": 60,
+      "timestamp": "2024-04-05T03:34:16.654Z"
+    },
+    {
+      "id": "1712288637157",
+      "userId": "1",
+      "score": 0,
+      "quizId": "ADBS",
+      "percentageCorrect": 0,
+      "timestamp": "2024-04-05T03:43:57.157Z"
+    },
+    {
+      "id": "1712293779394",
+      "userId": "1",
+      "score": 2,
+      "quizId": "ADAV",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T05:09:39.394Z"
+    },
+    {
+      "id": "1712294903179",
+      "userId": "1",
+      "score": 2,
+      "quizId": "ADAV",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T05:28:23.179Z"
+    },
+    {
+      "id": "1712296772028",
+      "userId": "1",
+      "score": 3,
+      "quizId": "PHP3",
+      "percentageCorrect": 30,
+      "timestamp": "2024-04-05T05:59:32.028Z"
+    },
+    {
+      "id": "1712296868307",
+      "userId": "1",
+      "score": 2,
+      "quizId": "PHP3",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T06:01:08.307Z"
+    },
+    {
+      "id": "1712297041285",
+      "userId": "1",
+      "score": 3,
+      "quizId": "PHP3",
+      "percentageCorrect": 30,
+      "timestamp": "2024-04-05T06:04:01.285Z"
+    },
+    {
+      "id": "1712297362390",
+      "userId": "1",
+      "score": 5,
+      "quizId": "PHP3",
+      "percentageCorrect": 50,
+      "timestamp": "2024-04-05T06:09:22.390Z"
+    },
+    {
+      "id": "1712297413046",
+      "userId": "1",
+      "score": 2,
+      "quizId": "PHP3",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T06:10:13.046Z"
+    },
+    {
+      "id": "1712301202618",
+      "userId": "1",
+      "score": 5,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 50,
+      "timestamp": "2024-04-05T07:13:22.618Z"
+    },
+    {
+      "id": "1712301268172",
+      "userId": "1",
+      "score": 1,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 10,
+      "timestamp": "2024-04-05T07:14:28.172Z"
+    },
+    {
+      "id": "1712301298111",
+      "userId": "1",
+      "score": 2,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T07:14:58.111Z"
+    },
+    {
+      "id": "1712301387509",
+      "userId": "1",
+      "score": 4,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 40,
+      "timestamp": "2024-04-05T07:16:27.509Z"
+    },
+    {
+      "id": "1712301488158",
+      "userId": "1",
+      "score": 2,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T07:18:08.158Z"
+    },
+    {
+      "id": "1712301596126",
+      "userId": "1",
+      "score": 4,
+      "quizId": "PHP3",
+      "percentageCorrect": 40,
+      "timestamp": "2024-04-05T07:19:56.126Z"
+    },
+    {
+      "id": "1712302011534",
+      "userId": "1",
+      "score": 6,
+      "quizId": "PHP3",
+      "percentageCorrect": 60,
+      "timestamp": "2024-04-05T07:26:51.534Z"
+    },
+    {
+      "id": "1712302026156",
+      "userId": "1",
+      "score": 2,
+      "quizId": "PHP3",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T07:27:06.156Z"
+    },
+    {
+      "id": "1712302163257",
+      "userId": "1",
+      "score": 4,
+      "quizId": "PHP3",
+      "percentageCorrect": 40,
+      "timestamp": "2024-04-05T07:29:23.257Z"
+    },
+    {
+      "id": "1712302408637",
+      "userId": "1",
+      "score": 3,
+      "quizId": "PHP3",
+      "percentageCorrect": 30,
+      "timestamp": "2024-04-05T07:33:28.637Z"
+    },
+    {
+      "id": "1712302572896",
+      "userId": "1",
+      "score": 2,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T07:36:12.896Z"
+    },
+    {
+      "id": "1712305425230",
+      "userId": "1",
+      "score": 3,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 30,
+      "timestamp": "2024-04-05T08:23:45.230Z"
+    },
+    {
+      "id": "1712307130784",
+      "userId": "1",
+      "score": 2,
+      "quizId": "PHP3",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T08:52:10.784Z"
+    },
+    {
+      "id": "1712307201236",
+      "userId": "1",
+      "score": 1,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 10,
+      "timestamp": "2024-04-05T08:53:21.236Z"
+    },
+    {
+      "id": "1712307262418",
+      "userId": "1",
+      "score": 1,
+      "quizId": "PHP3",
+      "percentageCorrect": 10,
+      "timestamp": "2024-04-05T08:54:22.418Z"
+    },
+    {
+      "id": "1712307387985",
+      "userId": "1",
+      "score": 2,
+      "quizId": "PHP3",
+      "percentageCorrect": 20,
+      "timestamp": "2024-04-05T08:56:27.985Z"
+    },
+    {
+      "id": "1712307626591",
+      "userId": "1",
+      "score": 1,
+      "quizId": "ANGULAR",
+      "percentageCorrect": 10,
+      "timestamp": "2024-04-05T09:00:26.591Z"
+    },
+    {
+      "id": "1712307753839",
+      "userId": "1",
+      "score": 9,
+      "quizId": "PHP3",
+      "percentageCorrect": 90,
+      "timestamp": "2024-04-05T09:02:33.839Z"
     }
   ]
 }
