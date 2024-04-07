@@ -11,7 +11,7 @@ window.detailController = function ($scope, $http, $routeParams) {
 
 }
 
-window.testController = function ($scope, $http, $routeParams, $location) {
+window.testController = function ($scope, $http, $routeParams, $location, $interval) {
     var apiUrl = 'http://localhost:3004/questions';
     var apiUrlSubmit = 'http://localhost:3004/results';
     var id = $routeParams.id;
@@ -73,6 +73,16 @@ window.testController = function ($scope, $http, $routeParams, $location) {
         }
         return score;
     };
+    $scope.time = 900;
+
+    var countdown=$interval(function(){
+        if ($scope.time>0) {
+            $scope.time-=1;
+        }else if($scope.time==0){
+            // console.log("het gio");
+            $interval.cancel(countdown)
+        }
+    },1000)
 }
 window.ResultController = function ($scope, $http, $routeParams) {
     var apiUrl = "http://localhost:3004/results";

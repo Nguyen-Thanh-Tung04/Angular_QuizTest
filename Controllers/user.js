@@ -1,4 +1,4 @@
-window.login = function ($scope, $http, $location) {
+window.login = function ($scope, $http, $location,$rootScope) {
     var apiUrl = "http://localhost:3004/acount";
 
     $scope.checkLogin = function () {
@@ -9,6 +9,7 @@ window.login = function ($scope, $http, $location) {
             for (var i = 0; i < $scope.accounts.length; i++) {
                 var account = $scope.accounts[i];
                 if (account.username === $scope.username && account.password === $scope.password) {
+                    $rootScope.user = account.username;
                     alert('Login pass');
                     $location.path('home')
                     return;
@@ -68,7 +69,7 @@ window.login = function ($scope, $http, $location) {
         }
     }
     $scope.forget = function () {
-        if (!$scope.username) {
+        if (!$scope.email) {
             alert('Không được để trống');
             return;
         }
@@ -79,7 +80,7 @@ window.login = function ($scope, $http, $location) {
 
             for (var i = 0; i < $scope.accounts.length; i++) {
                 var account = $scope.accounts[i];
-                if (account.username === $scope.username) {
+                if (account.email === $scope.email) {
                     alert('Mật khẩu của bạn :' + account.password);
                     $location.path('login')
                     return;

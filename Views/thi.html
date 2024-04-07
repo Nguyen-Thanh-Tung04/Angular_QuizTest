@@ -1,12 +1,12 @@
 <section class="mt-5 container">
     <div class="row mt-5">
         <div class="col-12">
-            <div class="card mb-4">
+            <div class=" mb-4">
 
                 <div class="card-body">
                     <div class="d-flex justify-content-center align-items-center border-bottom pb-3 mb-3 r text-center">
-                        <h3>Thời gian làm bài : </h3>
-                        <h3 class="text-danger">15 phút</h3>
+                        <h3>Thời gian làm bài : {{(time-time%60)/60 }}:{{time%60}}</h3>
+                        <h3 class="text-danger" id="countdown"></h3>
 
                     </div>
 
